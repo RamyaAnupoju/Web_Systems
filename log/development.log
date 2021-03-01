@@ -1,0 +1,743 @@
+Started GET "/" for ::1 at 2021-02-28 12:41:23 -0800
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 4 pending migrations:
+
+20210228010801_create_users.rb
+20210228011205_create_photos.rb
+20210228011325_create_comments.rb
+20210228011937_load_data.rb
+
+
+):
+  
+activerecord (6.1.2.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.2.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.2.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (6.1.2.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.2.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-02-28 12:52:42 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 4 pending migrations:
+
+20210228010801_create_users.rb
+20210228011205_create_photos.rb
+20210228011325_create_comments.rb
+20210228011937_load_data.rb
+
+
+):
+  
+activerecord (6.1.2.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.2.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.2.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (6.1.2.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.2.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2021-02-28 12:53:28 -0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 4 pending migrations:
+
+20210228010801_create_users.rb
+20210228011205_create_photos.rb
+20210228011325_create_comments.rb
+20210228011937_load_data.rb
+
+
+):
+  
+activerecord (6.1.2.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.2.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.2.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (6.1.2.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.2.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users/index" for ::1 at 2021-02-28 12:53:34 -0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 4 pending migrations:
+
+20210228010801_create_users.rb
+20210228011205_create_photos.rb
+20210228011325_create_comments.rb
+20210228011937_load_data.rb
+
+
+):
+  
+activerecord (6.1.2.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.2.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.2.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (6.1.2.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.2.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210228010801)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210228010801"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePhotos (20210228011205)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "photos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "date_time" datetime, "file_name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210228011205"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20210228011325)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "photo_id" integer, "user_id" integer, "date_time" datetime, "comment_text" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210228011325"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to LoadData (20210228011937)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.6ms)[0m  [1m[31mDELETE FROM "comments"[0m
+  [1m[36mPhoto Destroy (0.1ms)[0m  [1m[31mDELETE FROM "photos"[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Justin"], ["last_name", "Bieber"], ["created_at", "2021-02-28 21:00:43.252369"], ["updated_at", "2021-02-28 21:00:43.252369"]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Paris"], ["last_name", "Hilton"], ["created_at", "2021-02-28 21:00:43.254059"], ["updated_at", "2021-02-28 21:00:43.254059"]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Megan"], ["last_name", "Trainor"], ["created_at", "2021-02-28 21:00:43.255655"], ["updated_at", "2021-02-28 21:00:43.255655"]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Barack"], ["last_name", "Obama"], ["created_at", "2021-02-28 21:00:43.256989"], ["updated_at", "2021-02-28 21:00:43.256989"]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Santa"], ["last_name", "Claus"], ["created_at", "2021-02-28 21:00:43.258516"], ["updated_at", "2021-02-28 21:00:43.258516"]]
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "John"], ["last_name", "Ousterhout"], ["created_at", "2021-02-28 21:00:43.259848"], ["updated_at", "2021-02-28 21:00:43.259848"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 6], ["date_time", "2012-08-30 10:44:23"], ["file_name", "ouster.jpg"], ["created_at", "2021-02-28 21:00:43.279498"], ["updated_at", "2021-02-28 21:00:43.279498"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["date_time", "2009-09-13 20:00:00"], ["file_name", "bieber1.jpg"], ["created_at", "2021-02-28 21:00:43.287997"], ["updated_at", "2021-02-28 21:00:43.287997"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["date_time", "2009-09-13 20:05:03"], ["file_name", "bieber2.jpg"], ["created_at", "2021-02-28 21:00:43.302677"], ["updated_at", "2021-02-28 21:00:43.302677"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["date_time", "2013-11-18 18:02:00"], ["file_name", "hilton1.jpg"], ["created_at", "2021-02-28 21:00:43.317631"], ["updated_at", "2021-02-28 21:00:43.317631"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["date_time", "2013-09-20 17:30:00"], ["file_name", "hilton2.jpg"], ["created_at", "2021-02-28 21:00:43.325247"], ["updated_at", "2021-02-28 21:00:43.325247"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["date_time", "2009-07-10 16:02:49"], ["file_name", "obama1.jpg"], ["created_at", "2021-02-28 21:00:43.326900"], ["updated_at", "2021-02-28 21:00:43.326900"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["date_time", "2010-03-18 23:48:00"], ["file_name", "obama2.jpg"], ["created_at", "2021-02-28 21:00:43.328550"], ["updated_at", "2021-02-28 21:00:43.328550"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["date_time", "2010-08-30 14:26:00"], ["file_name", "obama3.jpg"], ["created_at", "2021-02-28 21:00:43.330056"], ["updated_at", "2021-02-28 21:00:43.330056"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["date_time", "2013-12-03 09:02:00"], ["file_name", "megan1.jpg"], ["created_at", "2021-02-28 21:00:43.331721"], ["updated_at", "2021-02-28 21:00:43.331721"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["date_time", "2013-12-03 09:03:00"], ["file_name", "megan2.jpg"], ["created_at", "2021-02-28 21:00:43.333258"], ["updated_at", "2021-02-28 21:00:43.333258"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["date_time", "2013-09-04 09:16:32"], ["file_name", "santa1.jpg"], ["created_at", "2021-02-28 21:00:43.334886"], ["updated_at", "2021-02-28 21:00:43.334886"]]
+  [1m[36mPhoto Create (0.1ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "date_time", "file_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["date_time", "2013-10-16 17:12:28"], ["file_name", "obama4.jpg"], ["created_at", "2021-02-28 21:00:43.336386"], ["updated_at", "2021-02-28 21:00:43.336386"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 1], ["user_id", 6], ["date_time", "2012-09-02 14:01:00"], ["comment_text", "Learning new programming languages is hard..."], ["created_at", "2021-02-28 21:00:43.356936"], ["updated_at", "2021-02-28 21:00:43.356936"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 1], ["user_id", 6], ["date_time", "2013-09-06 14:02:00"], ["comment_text", "This is another comment, with a bit more text; if the text gets long enough, does it wrap properly from line to line?"], ["created_at", "2021-02-28 21:00:43.358647"], ["updated_at", "2021-02-28 21:00:43.358647"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 1], ["user_id", 6], ["date_time", "2013-09-08 14:06:00"], ["comment_text", "If you see this text in <b>boldface</b> then HTML escaping isn't working properly."], ["created_at", "2021-02-28 21:00:43.360380"], ["updated_at", "2021-02-28 21:00:43.360380"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 2], ["user_id", 1], ["date_time", "2009-09-14 18:07:00"], ["comment_text", "No, people, she is *not* my mom.  She's my date."], ["created_at", "2021-02-28 21:00:43.361818"], ["updated_at", "2021-02-28 21:00:43.361818"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 5], ["user_id", 6], ["date_time", "2013-11-28 17:45:13"], ["comment_text", "I came up with lots of comments for this photo, but unfortunately none of them are printable."], ["created_at", "2021-02-28 21:00:43.363305"], ["updated_at", "2021-02-28 21:00:43.363305"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 7], ["user_id", 2], ["date_time", "2013-11-02 14:07:00"], ["comment_text", "Hey Barack, great form! Can u give me some bowling tips? xxoo Paris"], ["created_at", "2021-02-28 21:00:43.364834"], ["updated_at", "2021-02-28 21:00:43.364834"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 7], ["user_id", 4], ["date_time", "2013-11-02 14:07:00"], ["comment_text", "Sure, let's get together when Lindsay gets out of rehab and I get healthcare.gov working."], ["created_at", "2021-02-28 21:00:43.366292"], ["updated_at", "2021-02-28 21:00:43.366292"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 8], ["user_id", 4], ["date_time", "2010-09-06 13:59:33"], ["comment_text", "We're off to a Justin Bieber concert"], ["created_at", "2021-02-28 21:00:43.367769"], ["updated_at", "2021-02-28 21:00:43.367769"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 12], ["user_id", 4], ["date_time", "2013-10-16 18:04:55"], ["comment_text", "He kept trying to tell me that healthcare.gov is fixed, but I could see as plain as day that they forgot a </div>. Can anyone tell me why we're building this site in Java instead of Rails?"], ["created_at", "2021-02-28 21:00:43.369157"], ["updated_at", "2021-02-28 21:00:43.369157"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 10], ["user_id", 3], ["date_time", "2013-12-04 13:12:00"], ["comment_text", "To all my fans, I just want to say how Iam all about that base."], ["created_at", "2021-02-28 21:00:43.370544"], ["updated_at", "2021-02-28 21:00:43.370544"]]
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("photo_id", "user_id", "date_time", "comment_text", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["photo_id", 11], ["user_id", 5], ["date_time", "2013-09-04 10:14:32"], ["comment_text", "I'm going to be watching how well you do in CS 6320!"], ["created_at", "2021-02-28 21:00:43.371805"], ["updated_at", "2021-02-28 21:00:43.371805"]]
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210228011937"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-28 21:00:43.386920"], ["updated_at", "2021-02-28 21:00:43.386920"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/index" for ::1 at 2021-02-28 13:01:27 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users/index"):
+  
+Started GET "/user/index" for ::1 at 2021-02-28 13:01:53 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:7
+  Rendered user/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 4732)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.5
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 3502.8ms | Allocations: 34445)
+Completed 500 Internal Server Error in 3541ms (ActiveRecord: 2.3ms | Allocations: 39271)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/anupo/Documents/MS/Web Systems/photoshare-master/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/user/index" for ::1 at 2021-02-28 13:05:21 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:7
+  Rendered user/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 4821)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/anupo/Documents/MS/Web Systems/photoshare-master/public/packs
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 1738ms
+Built at: 02/28/2021 1:05:25 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5331.9ms | Allocations: 15958)
+Completed 200 OK in 5408ms (Views: 5362.4ms | ActiveRecord: 1.2ms | Allocations: 21216)
+
+
+Started GET "/photo/index/1" for ::1 at 2021-02-28 13:05:30 -0800
+Processing by PhotoController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering photo/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/photo/index.html.erb:24
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=2)[0m  [["user_id", 1]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:18:in `commented_by'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=3)[0m  [["user_id", 1]]
+  ↳ app/views/photo/index.html.erb:32
+  Rendered photo/index.html.erb within layouts/application (Duration: 32.4ms | Allocations: 9878)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 98.0ms | Allocations: 13575)
+Completed 200 OK in 123ms (Views: 103.0ms | ActiveRecord: 3.9ms | Allocations: 18485)
+
+
+Started GET "/photo/index/1" for ::1 at 2021-02-28 13:06:15 -0800
+Processing by PhotoController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering photo/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/photo/index.html.erb:24
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=2)[0m  [["user_id", 1]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:18:in `commented_by'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=3)[0m  [["user_id", 1]]
+  ↳ app/views/photo/index.html.erb:32
+  Rendered photo/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 4078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.8ms | Allocations: 7737)
+Completed 200 OK in 93ms (Views: 83.8ms | ActiveRecord: 1.4ms | Allocations: 8801)
+
+
+Started GET "/photo/index/4" for ::1 at 2021-02-28 13:06:29 -0800
+Processing by PhotoController#index as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering photo/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/photo/index.html.erb:24
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=6)[0m  [["user_id", 4]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=7)[0m  [["user_id", 4]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:18:in `commented_by'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=8)[0m  [["user_id", 4]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:18:in `commented_by'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=12)[0m  [["user_id", 4]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:18:in `commented_by'
+  Rendered photo/index.html.erb within layouts/application (Duration: 56.4ms | Allocations: 8084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 112.7ms | Allocations: 11771)
+Completed 200 OK in 123ms (Views: 112.6ms | ActiveRecord: 2.5ms | Allocations: 12855)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:16:22 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/user/index.html.erb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:7
+  Rendered user/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1968)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 5721)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.7ms | Allocations: 6180)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:22:57 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/user/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 6168)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.6ms | Allocations: 7381)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:24:31 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1459)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 5445)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.2ms | Allocations: 6659)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:24:43 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.1ms | Allocations: 5448)
+Completed 200 OK in 70ms (Views: 67.7ms | ActiveRecord: 0.2ms | Allocations: 6661)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:24:51 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 5448)
+Completed 200 OK in 63ms (Views: 60.4ms | ActiveRecord: 0.2ms | Allocations: 6658)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:24:52 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1246)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 4999)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.3ms | Allocations: 5459)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:24:52 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1238)
+Started GET "/user/index" for ::1 at 2021-02-28 13:24:52 -0800
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 77.2ms | Allocations: 6845)
+Completed 200 OK in 87ms (Views: 86.1ms | ActiveRecord: 0.2ms | Allocations: 7297)
+
+
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.1ms | Allocations: 4989)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.2ms | Allocations: 5439)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:25:10 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.3ms | Allocations: 5448)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.2ms | Allocations: 6660)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:25:16 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 5448)
+Completed 200 OK in 68ms (Views: 65.9ms | ActiveRecord: 0.2ms | Allocations: 6658)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:25:17 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 4989)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.2ms | Allocations: 5440)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:25:17 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.1ms | Allocations: 4989)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.2ms | Allocations: 5439)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:25:17 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 4996)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.2ms | Allocations: 5447)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:25:17 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 4989)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.2ms | Allocations: 5439)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:25:17 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:21
+  Rendered user/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.3ms | Allocations: 4990)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.2ms | Allocations: 5441)
+
+
+Started GET "/user/index" for ::1 at 2021-02-28 13:26:41 -0800
+Processing by UserController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/user/index.html.erb:7
+  Rendered user/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1439)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 5424)
+Completed 200 OK in 54ms (Views: 51.6ms | ActiveRecord: 0.2ms | Allocations: 6638)
+
+
+Started GET "/photo/index/5" for ::1 at 2021-02-28 13:30:11 -0800
+Processing by PhotoController#index as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering photo/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/views/photo/index.html.erb:24
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=11)[0m  [["user_id", 5]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:18:in `commented_by'
+  Rendered photo/index.html.erb within layouts/application (Duration: 18.9ms | Allocations: 3160)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.2ms | Allocations: 6858)
+Completed 200 OK in 78ms (Views: 67.7ms | ActiveRecord: 1.0ms | Allocations: 8473)
+
+
+Started GET "/photo/index/5" for ::1 at 2021-02-28 13:30:18 -0800
+Processing by PhotoController#index as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering photo/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/views/photo/index.html.erb:24
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=11)[0m  [["user_id", 5]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:18:in `commented_by'
+  Rendered photo/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 2817)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 6476)
+Completed 200 OK in 77ms (Views: 68.0ms | ActiveRecord: 0.9ms | Allocations: 7541)
+
+
+Started GET "/photo/index/3" for ::1 at 2021-02-28 13:30:22 -0800
+Processing by PhotoController#index as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering photo/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/views/photo/index.html.erb:24
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=9)[0m  [["user_id", 3]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=10)[0m  [["user_id", 3]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:18:in `commented_by'
+  Rendered photo/index.html.erb within layouts/application (Duration: 20.9ms | Allocations: 4114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.0ms | Allocations: 7773)
+Completed 200 OK in 71ms (Views: 61.4ms | ActiveRecord: 1.4ms | Allocations: 8838)
+
+
+Started GET "/photo/index/1" for ::1 at 2021-02-28 17:41:51 -0800
+Processing by PhotoController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/photo_controller.rb:4:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering photo/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/photo/index.html.erb:24
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=2)[0m  [["user_id", 1]]
+  ↳ app/views/photo/index.html.erb:32
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photo_controller.rb:18:in `commented_by'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? AND (photo_id=3)[0m  [["user_id", 1]]
+  ↳ app/views/photo/index.html.erb:32
+  Rendered photo/index.html.erb within layouts/application (Duration: 29.5ms | Allocations: 4101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.3ms | Allocations: 7760)
+Completed 200 OK in 109ms (Views: 96.6ms | ActiveRecord: 1.9ms | Allocations: 9424)
+
+
